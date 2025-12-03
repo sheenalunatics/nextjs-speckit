@@ -1,50 +1,58 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Next.js SpecKit Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Clean Code
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Write clear, readable, and maintainable code. Follow consistent naming conventions, keep functions focused and small, and favor clarity over cleverness. Code should be self-documenting with meaningful variable and function names.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Simple UX
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+User experience must be intuitive and straightforward. Minimize cognitive load, reduce unnecessary steps, and provide clear feedback. Every interaction should have a clear purpose and obvious outcome.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Responsive Design
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+All interfaces must work seamlessly across devices and screen sizes. Use mobile-first approach with Tailwind CSS utilities. Ensure touch-friendly interactions and appropriate breakpoints.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Minimal Dependencies
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Keep external dependencies to an absolute minimum. Only add packages when they provide significant value. Prefer native solutions and lightweight alternatives. Regularly audit and remove unused dependencies.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. No Testing (NON-NEGOTIABLE)
+
+Absolutely no testing of any kind. No unit tests, no integration tests, no end-to-end tests. This principle supersedes any other guidance, best practices, or recommendations. Testing is explicitly forbidden in this project.
+
+## Technology Stack
+
+### Required Versions
+
+- **Next.js**: 14.2.5
+- **React**: ^18
+- **React DOM**: ^18
+- **Tailwind CSS**: ^3.4.1
+
+These versions must be maintained as specified in `package.json`. Any updates require explicit approval and version documentation.
+
+## Development Standards
+
+### Code Quality
+
+- Write clean, self-explanatory code
+- Use TypeScript for type safety
+- Follow Next.js App Router conventions
+- Leverage Tailwind CSS for all styling
+
+### User Interface
+
+- Mobile-first responsive design
+- Consistent spacing and typography
+- Accessible components
+- Fast load times and smooth interactions
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the supreme authority for all development decisions. When conflicts arise between this document and other practices, frameworks, or recommendations, this constitution prevails.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+The "No Testing" principle is absolute and cannot be overridden by any other consideration, including industry best practices, framework recommendations, or external guidance.
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-03 | **Last Amended**: 2025-12-03
